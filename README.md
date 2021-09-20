@@ -61,31 +61,3 @@ speed can also be tested in above code.
     python3 demo_eval.py
 
 ### Tools
-1. You can generate identity 3DLUT with arbitrary dimension by using `utils/generate_identity_3DLUT.py` as follows:
-
-```
-# you can replace 33 with any number you want
-python3 utils/generate_identity_3DLUT.py -d 33
-```
-
-2. You can visualize the learned 3D LUT either by using the matlab code in `visualization_lut` or using the python code `utils/visualize_lut.py` as follows:
-
-```
-python3 utils/visualize_lut.py path/to/your/lut
-# you can also modify the dimension of the lut as follows
-python3 utils/visualize_lut.py path/to/your/lut --lut_dim 64
-```
-
-## Citation
-```
-@article{zeng2020lut,
-  title={Learning Image-adaptive 3D Lookup Tables for High Performance Photo Enhancement in Real-time},
-  author={Zeng, Hui and Cai, Jianrui and Li, Lida and Cao, Zisheng and Zhang, Lei},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  volume={},
-  number={},
-  pages={},
-  year={2020},
-  publisher={IEEE}
-}
-```
